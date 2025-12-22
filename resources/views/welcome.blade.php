@@ -205,7 +205,9 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-dark-teal mb-8">System Overview</h2>
             <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
-                <span class="font-bold text-teal">FinCore</span> is a modular personal finance system designed to track
+                <span class="text-3xl font-bold bg-gray-900 rounded-lg px-3 py-1 inline-block"><span
+                        class="text-[#FF7F50]">Fin</span><span class="text-white">Core</span></span> is a modular
+                personal finance system designed to track
                 income, expenses, savings, and investments while providing intelligent insights into overall financial
                 health through a centralized analytics engine.
             </p>
@@ -478,7 +480,7 @@
                 </a>
             </div>
             <p class="mt-12 text-gray-500 text-sm">
-                Copyright &copy; 2026 Wab.Wire. Powered by: STACKed System Design. All rights reserved.
+                &copy; {{ date('Y') }} Wab. Wire Systems. All rights reserved. | Powered by DevGee
             </p>
         </div>
     </footer>

@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans text-gray-900 antialiased" style="background-color: #0f4c5c;">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
-            <div class="mb-6">
-                <a href="/" class="flex flex-col items-center">
-                    <x-application-logo class="w-20 h-20 fill-current text-white drop-shadow-md" />
-                </a>
-            </div>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-            <div class="w-full sm:max-w-md px-8 py-8 bg-gray-50 shadow-2xl overflow-hidden sm:rounded-xl">
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800">FinCore System</h2>
-                    <p class="text-sm text-gray-500 mt-2">Sign in to continue</p>
-                </div>
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 
-                {{ $slot }}
-            </div>
-            
-            <div class="mt-8 text-white/60 text-sm">
-                &copy; {{ date('Y') }} FinCore. All rights reserved.
-            </div>
+<body
+    class="font-sans text-gray-900 antialiased bg-gradient-to-br from-[#037B90] via-[#025F70] to-[#FF7F50] min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
+    <div class="w-full sm:max-w-md px-6 py-4 bg-white shadow-xl overflow-hidden sm:rounded-lg">
+        <div class="flex flex-col items-center mb-6">
+            <x-application-logo class="w-20 h-20 fill-current text-[#037B90]" />
         </div>
-    </body>
+
+        <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold bg-gray-900 rounded-lg px-4 py-2"><span class="text-[#FF7F50]">Fin</span><span
+                    class="text-white">Core</span></h2>
+            <p class="text-sm text-gray-500 mt-1">Sign in to continue</p>
+        </div>
+
+        {{ $slot }}
+    </div>
+
+    <div class="mt-8 text-white/80 text-sm">
+        &copy; {{ date('Y') }} Wab. Wire Systems. All rights reserved. | Powered by DevGee
+    </div>
+</body>
+
 </html>

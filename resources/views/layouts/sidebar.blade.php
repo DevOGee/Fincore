@@ -3,7 +3,8 @@
     <div class="flex items-center justify-center h-20 border-b border-gray-100">
         <div class="flex items-center space-x-2">
             <x-application-logo class="block h-8 w-auto fill-current text-teal-700" />
-            <span class="text-2xl font-bold text-gray-800 tracking-tight">FinCore</span>
+            <span class="text-2xl font-bold tracking-tight bg-gray-900 rounded px-2"><span
+                    class="text-[#FF7F50]">Fin</span><span class="text-white">Core</span></span>
         </div>
     </div>
 
