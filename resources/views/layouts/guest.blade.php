@@ -14,10 +14,30 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        @keyframes gradient-xy {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-xy 6s ease infinite;
+        }
+    </style>
 </head>
 
 <body
-    class="font-sans text-gray-900 antialiased bg-gradient-to-br from-[#037B90] via-[#025F70] to-[#FF7F50] min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
+    class="font-sans text-gray-900 antialiased bg-gradient-to-br from-[#037B90] to-[#FF7F50] animate-gradient min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
     <div class="w-full sm:max-w-md px-6 py-4 bg-white shadow-xl overflow-hidden sm:rounded-lg">
         <div class="flex flex-col items-center mb-6">
             <x-application-logo class="w-20 h-20 fill-current text-[#037B90]" />

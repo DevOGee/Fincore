@@ -6,12 +6,18 @@
         @csrf
 
         <!-- Email Address -->
+        <!-- Email Address -->
         <div>
             <label for="email" class="block font-medium text-sm text-gray-700">Email Address</label>
-            <input id="email"
-                class="block mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:border-[#037B90] focus:ring-[#037B90] px-4 py-3"
-                type="email" name="email" :value="old('email')" required autofocus autocomplete="username"
-                placeholder="Email address" />
+            <div class="relative mt-1">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">📧</span>
+                </div>
+                <input id="email"
+                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-[#037B90] focus:ring-[#037B90] pl-10 px-4 py-3"
+                    type="email" name="email" :value="old('email')" required autofocus autocomplete="username"
+                    placeholder="Email address" />
+            </div>
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -20,9 +26,12 @@
         <div class="mt-4" x-data="{ show: false }">
             <label for="password" class="block font-medium text-sm text-gray-700">Password</label>
 
-            <div class="relative">
+            <div class="relative mt-1">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">🔒</span>
+                </div>
                 <input id="password"
-                    class="block mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:border-[#037B90] focus:ring-[#037B90] px-4 py-3 pr-10"
+                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-[#037B90] focus:ring-[#037B90] pl-10 px-4 py-3 pr-10"
                     :type="show ? 'text' : 'password'" name="password" required autocomplete="current-password"
                     placeholder="Password" />
 
