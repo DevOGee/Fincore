@@ -26,6 +26,7 @@
         <div class="text-center mb-6">
             <h2 class="text-3xl font-bold bg-gray-900 rounded-lg px-4 py-2"><span class="text-[#FF7F50]">Fin</span><span
                     class="text-white">Core</span></h2>
+            <p class="text-sm font-semibold text-gray-600 mt-2">Secure Financial Core System</p>
             <p class="text-sm text-gray-500 mt-1">Sign in to continue</p>
         </div>
 
